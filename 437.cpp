@@ -13,6 +13,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// 我写的这个代码存在大量的不必要复制操作，导致时空浪费。可以使用一个字典存储前缀和，而不是传递。这样可以节省大量时间。
 class Solution {
 public:
     int pathSum(TreeNode* root, int targetSum) {
